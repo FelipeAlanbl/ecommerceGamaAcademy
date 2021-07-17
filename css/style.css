@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    background-image: url('../img/pexels-valeria-boltneva-1639562_sml.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    margin: 30px 40px;
+    padding: 30px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80vw;
+}
+
+.text-content {
+    text-align: center;
+    width: 300px;
+}
+
+.text,
+.title {
+    color: #fff;
+}
+
+.title {
+    font-size: 2.0rem;
+}
+
+.text {
+    font-size: 1.3rem;
+}
+
+.destaque {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.register-field {
+    display: flex;
+    align-items: center;
+}
+
+.email-field {
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 35px;
+    font-size: 1.6rem;
+}
+
+.cadastrar-button {
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 50vw;
+    }
+
+    .box {
+        justify-content: space-around;
+    }
+
+    .title {
+        font-size: 2.6rem;
+    }
+    
+    .text {
+        font-size: 1.9rem;
+    }
+
+    .text-content {
+        text-align: center;
+        width: 400px;
+    }
+
+    .email-field {
+        border: none;
+        outline: none;
+        width: 400px;
+        height: 35px;
+        font-size: 1.6rem;
+    }
+    
+    .cadastrar-button {
+        width: 100px;
+        height: 35px;
+        background-color: red;
+        border: none;
+        border-radius: 0 25px 25px 0;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    
+    
+}
+
+
+
+@media screen and (min-width: 1025px) {
+
+    body {
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .box {
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 40vw;
+        margin: 30px 40px;
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        width: 300px;
+    }
+    
+    .text-content {
+        text-align: center;
+        width: 300px;
+    }
+    
+    
+    .title {
+        font-size: 2.5rem;
+    }
+    
+    .text {
+        font-size: 1.7rem;
+    }
+    
+    .destaque {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    
+    .register-field {
+        display: flex;
+        align-items: center;
+    }
+    
+    .email-field {
+        border: none;
+        outline: none;
+        width: 300px;
+        height: 35px;
+        font-size: 1.6rem;
+    }
+    
+    .cadastrar-button {
+        width: 100px;
+        height: 35px;
+        background-color: red;
+        border: none;
+        border-radius: 0 25px 25px 0;
+        color: #fff;
+        font-size: 1.3rem;
+    }
+}
