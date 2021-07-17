@@ -15,6 +15,7 @@ function registrarEmail (email) {
     } else {
         console.log(email)
         localStorage.setItem('email', email)
+        alert('Obrigado! Seus descontos chegarão em breve!')
     }
 }
 

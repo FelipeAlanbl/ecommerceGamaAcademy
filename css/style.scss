@@ -1,0 +1,160 @@
+$corfundobox: rgba(0,0,0, 0.2);
+$textColor: #fff;
+
+@mixin noPaddingMargin {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flexField {
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+
+}
+
+body {
+    @include noPaddingMargin();
+    @include flexField();
+
+    font-family: 'Roboto';
+    background-image: url('../img/pexels-valeria-boltneva-1639562.jpg');
+    background-position: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    @include flexField();
+
+    background: $corfundobox;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+
+    .logo {
+        width: 80vw;
+    }
+
+    .register-field {
+        @include flexField();
+
+        .email-field {
+            width: 60vw;
+            border: none;
+            outline: none;
+            height: 33px;
+            font-size: 1.7rem;
+        }
+
+        .cadastrar-button {
+            border: none;
+            height: 37px;
+            background-color: red;
+            color: #fff;;
+            border-radius: 0 25px 25px 0;
+        }
+    }
+
+    .text-content {
+        text-align: center;
+        color: $textColor;
+    
+        .title {
+            font-size: 2.5rem;
+        }
+
+        .text {
+            font-size: 1.7rem;
+        }
+
+        .destaque {
+            text-transform: uppercase;
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .box {
+        .logo {
+            width: 40vw;
+        }
+
+        .register-field {
+           
+            .email-field {
+                width: 70vw;
+                border: none;
+                outline: none;
+                height: 40px;
+            }
+    
+            .cadastrar-button {
+                border: none;
+                height: 43px;
+                background-color: red;
+                color: #fff;;
+                border-radius: 0 25px 25px 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        background-size: cover;
+    }
+
+    .box {
+        width: 100vw;
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    body {
+        @include noPaddingMargin();
+
+        background-size: cover;
+        justify-content: left;
+        width: 100vw;
+    }
+
+    .box {
+        width: 50vw;
+        border-radius: 60px;
+
+        .logo {
+            width: 350px;
+        }
+
+        .register-field {
+           
+            .email-field {
+                width: 30vw;
+                border: none;
+                outline: none;
+                height: 40px;
+            }
+    
+            .cadastrar-button {
+                border: none;
+                height: 43px;
+                background-color: red;
+                color: #fff;;
+                border-radius: 0 25px 25px 0;
+            }
+        }
+    }
+
+
+}
+
+
+
+
